@@ -1,0 +1,170 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	cursor: url("../assets/icon/mute_small.png"), auto;
+}
+
+.pages {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+}
+
+p {
+	margin: 0%;
+	padding: 0%;
+}
+
+/*--------------------HR--------------------*/
+hr {
+  height: 1px;
+  border: none;
+  background-color: #000000;
+}
+
+.parent hr {
+  --hr-color: #000000; /* Default value for light backgrounds */
+}
+
+.parent.dark hr {
+  --hr-color: #ffffff; /* Change the value for dark backgrounds */
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	background-color: aqua;
+	z-index: 1;
+}
+
+.gucccikev {
+	text-decoration: none;
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+	color: #000000;
+	margin-left: 10px;
+}
+
+.linkedin {
+	text-decoration: none;
+	
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+	color: #000000;
+	
+}
+
+.email {
+	text-decoration: none;
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+	color: #000000;
+}
+/*--------------------HR--------------------*/
+
+/*--------------------FIRST PAGE--------------------*/
+.firstPage {
+	background-color: #420000;
+}
+
+.firstPageFirstBlock {
+	position: absolute;
+	top: 5%;
+	left: 3px;
+	width: fit-content;
+	height: fit-content;
+}
+
+#design {
+	font-family: AbadiBold;
+	font-size: 100px;
+}
+
+#bringing {
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+}
+
+.firstPageSecondBlock {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: fit-content;
+	height: fit-content;
+	text-align: right;
+}
+
+#aka {
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+
+}
+
+#kevser {
+	font-family: AbadiBold;
+	font-size: 100px;
+	width: fit-content;
+	height: fit-content;
+}
+/*--------------------FIRST PAGE--------------------*/
+
+/*--------------------SEC PAGE--------------------*/
+.secondPage {
+	background-color: teal;
+	display: flex;
+}
+
+.secondPageFirstBlock {
+	width: 50%;
+	font-family: AbadiBold;
+	font-size: 100px;
+
+	text-align: center;
+	
+}
+
+.secondPageSecondBlock {
+	width: 50%;
+	font-family: AbadiBold;
+	font-size: 100px;
+
+	text-align: center;
+	
+}
+
+/*--------------------SEC PAGE--------------------*/
+
+
+/*--------------------FONT--------------------*/
+@font-face {
+  font-family: 'AbadiExtraLight';
+  src: url('../assets/font/Abadi/EM-Abadi/AbadiMT-ExtraLight.ttf');
+}
+@font-face {
+  font-family: 'AbadiLight';
+  src: url('../assets/font/Abadi/EM-Abadi/AbadiMT-Light.ttf');
+}
+@font-face {
+  font-family: 'AbadiExtraBold';
+  src: url('../assets/font/Abadi/EM-Abadi/AbadiMT-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'AbadiBold';
+  src: url('../assets/font/Abadi/EM-Abadi/AbadiMT-Bold.ttf');
+}
+/*--------------------FONT--------------------*/
+
+/*--------------------SCROLLBAR--------------------*/
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  /*border-radius: 30px;*/
+}
+/*--------------------SCROLLBAR--------------------*/
