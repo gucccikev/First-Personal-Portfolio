@@ -1,7 +1,7 @@
 body, html {
 	height: 100%;
 	margin: 0;
-	cursor: url("../assets/icon/mute_small.png"), auto;
+	/* cursor: url("../assets/icon/mute_small.png"), auto; */
 }
 
 .pages {
@@ -19,21 +19,12 @@ p {
 hr {
   height: 1px;
   border: none;
-  background-color: #000000;
-}
-
-.parent hr {
-  --hr-color: #000000; /* Default value for light backgrounds */
-}
-
-.parent.dark hr {
-  --hr-color: #ffffff; /* Change the value for dark backgrounds */
+  background-color: #ffffff;
 }
 
 .header {
 	position: fixed;
 	width: 100%;
-	background-color: aqua;
 	z-index: 1;
 }
 
@@ -41,54 +32,66 @@ hr {
 	text-decoration: none;
 	font-family: AbadiExtraLight;
 	font-size: 25px;
-	color: #000000;
+	color: #ffffff;
 	margin-left: 10px;
-}
-
-.linkedin {
-	text-decoration: none;
-	
-	font-family: AbadiExtraLight;
-	font-size: 25px;
-	color: #000000;
-	
 }
 
 .email {
 	text-decoration: none;
 	font-family: AbadiExtraLight;
 	font-size: 25px;
-	color: #000000;
+	color: #ffffff;
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
 }
+
+.linkedin {
+	text-decoration: none;
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+	color: #ffffff;
+	float: right;
+}
+
+
 /*--------------------HR--------------------*/
 
 /*--------------------FIRST PAGE--------------------*/
 .firstPage {
-	background-color: #420000;
+	background-color: #666666;
 }
 
 .firstPageFirstBlock {
 	position: absolute;
 	top: 5%;
-	left: 3px;
+	left: 50px;
 	width: fit-content;
 	height: fit-content;
 }
 
 #design {
-	font-family: AbadiBold;
+	font-family: AbadiLight;
 	font-size: 100px;
+
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-delay: 0s;
+	animation-name: slideInLeft;
 }
 
 #bringing {
 	font-family: AbadiExtraLight;
 	font-size: 25px;
+
+	animation-delay: 4s;
+	animation: fadeIn 2s;
 }
 
 .firstPageSecondBlock {
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	right: 50px;
 	width: fit-content;
 	height: fit-content;
 	text-align: right;
@@ -98,19 +101,26 @@ hr {
 	font-family: AbadiExtraLight;
 	font-size: 25px;
 
+	animation-delay: 6s;
+	animation: fadeIn 2s;
 }
 
 #kevser {
-	font-family: AbadiBold;
+	font-family: AbadiLight;
 	font-size: 100px;
 	width: fit-content;
 	height: fit-content;
+
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-delay: 2s;
+	animation-name: slideInLeft;
 }
 /*--------------------FIRST PAGE--------------------*/
 
 /*--------------------SEC PAGE--------------------*/
 .secondPage {
-	background-color: teal;
+	background-color: #000000;
 	display: flex;
 }
 
@@ -118,23 +128,76 @@ hr {
 	width: 50%;
 	font-family: AbadiBold;
 	font-size: 100px;
-
 	text-align: center;
-	
 }
 
 .secondPageSecondBlock {
 	width: 50%;
 	font-family: AbadiBold;
 	font-size: 100px;
-
 	text-align: center;
+}
+
+#designer {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	height: 100vh; 
+
+	color: #ffffff;
+}
+
+#designerInfo {
+	display: none;
+  	align-items: center;
+  	justify-content: center;
+  	height: 100vh; 
 	
+	font-size: 20px;
+	color: #ffffff;
+}
+
+#developer {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	height: 100vh;
+	
+	color: #A91101;
+}
+
+#developerInfo {
+	display: none;
+	align-items: center;
+  	justify-content: center;
+  	height: 100vh; 
+	
+	font-size: 20px;
+	color: #ffffff;
 }
 
 /*--------------------SEC PAGE--------------------*/
 
-
+@keyframes slideInLeft {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+@keyframes slideInRight {
+	100% {
+	  transform: translateX(-100%);
+	}
+	0% {
+	  transform: translateX(0);
+	}
+  }
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
 /*--------------------FONT--------------------*/
 @font-face {
   font-family: 'AbadiExtraLight';

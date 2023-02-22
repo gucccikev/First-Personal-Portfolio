@@ -1,10 +1,4 @@
-import * as THREE from 'three'
-
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-
-
+/*-----------------------------SCROLL BACK ON TOP-------------------------------*/
 document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
   e.preventDefault();
   var target = document.querySelector('#top');
@@ -30,21 +24,6 @@ document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
 
   requestAnimationFrame(animate);
 });
+/*-----------------------------SCROLL BACK ON TOP-------------------------------*/
 
-/*function MyParallaxComponent() {
-  return (
-    <Parallax pages={3}>
-      <ParallaxLayer offset={0} speed={1}>
-        <h1>Layer 1</h1>
-      </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={1}>
-        <h1>Layer 2</h1>
-      </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={1}>
-        <h1>Layer 3</h1>
-      </ParallaxLayer>
-    </Parallax>
-  );
-}
-
-ReactDOM.render(<MyParallaxComponent />, document.getElementById(''));*/
+/*-----------------------------HOVER ON TEXT-------------------------------*/
