@@ -26,55 +26,59 @@ hr {
 	position: fixed;
 	width: 100%;
 	z-index: 1;
+	background-color: #000000;
+
 }
 
 .gucccikev {
 	text-decoration: none;
 	font-family: AbadiExtraLight;
 	font-size: 25px;
+
+	margin-left: 50px;
 	color: #ffffff;
-	margin-left: 10px;
 }
 
 .email {
 	text-decoration: none;
 	font-family: AbadiExtraLight;
 	font-size: 25px;
-	color: #ffffff;
+
 	float: right;
-	margin-right: 10px;
+	margin-right: 50px;
 	margin-left: 10px;
+	color: #ffffff;
 }
 
 .linkedin {
 	text-decoration: none;
 	font-family: AbadiExtraLight;
 	font-size: 25px;
-	color: #ffffff;
+
 	float: right;
+	color: #ffffff;
 }
-
-
 /*--------------------HR--------------------*/
 
 /*--------------------FIRST PAGE--------------------*/
 .firstPage {
-	background-color: #666666;
+	background-color: #000000;
 }
 
 .firstPageFirstBlock {
 	position: absolute;
-	top: 5%;
+	top: 10%;
 	left: 50px;
+
 	width: fit-content;
 	height: fit-content;
 }
 
 #design {
-	font-family: AbadiLight;
+	font-family: AbadiExtraLight;
 	font-size: 100px;
 
-	animation-duration: 1s;
+	animation-duration: 2s;
 	animation-timing-function: ease;
 	animation-delay: 0s;
 	animation-name: slideInLeft;
@@ -84,16 +88,20 @@ hr {
 	font-family: AbadiExtraLight;
 	font-size: 25px;
 
+	color: #ffffff;
+
 	animation-delay: 4s;
 	animation: fadeIn 2s;
 }
 
 .firstPageSecondBlock {
 	position: absolute;
-	bottom: 0;
+	top: 10%;
 	right: 50px;
+
 	width: fit-content;
 	height: fit-content;
+
 	text-align: right;
 }
 
@@ -101,20 +109,47 @@ hr {
 	font-family: AbadiExtraLight;
 	font-size: 25px;
 
+	color: #ffffff;
+
 	animation-delay: 6s;
 	animation: fadeIn 2s;
 }
 
 #kevser {
-	font-family: AbadiLight;
+	font-family: AbadiExtraLight;
 	font-size: 100px;
+
 	width: fit-content;
 	height: fit-content;
 
-	animation-duration: 1s;
+	color: #ffffff;
+
+	animation-duration: 2s;
 	animation-timing-function: ease;
-	animation-delay: 2s;
-	animation-name: slideInLeft;
+	animation-delay: 0s;
+	animation-name: slideInRight;
+}
+
+.firstPageThirdBlock {
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+
+	animation: fadeIn 5s;
+}
+
+.arrowDown {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 1.5s;
+	animation-name: bounce;
+}
+
+#scrollDown {
+	font-family: AbadiExtraLight;
+	font-size: 15px;
+
+	color: #ffffff;
 }
 /*--------------------FIRST PAGE--------------------*/
 
@@ -125,16 +160,20 @@ hr {
 }
 
 .secondPageFirstBlock {
-	width: 50%;
-	font-family: AbadiBold;
+	font-family: AbadiExtraLight;
 	font-size: 100px;
+
+	width: 50%;
+
 	text-align: center;
 }
 
 .secondPageSecondBlock {
-	width: 50%;
-	font-family: AbadiBold;
+	font-family: AbadiExtraLight;
 	font-size: 100px;
+
+	width: 50%;
+
 	text-align: center;
 }
 
@@ -148,12 +187,13 @@ hr {
 }
 
 #designerInfo {
+	font-size: 20px;
+
 	display: none;
   	align-items: center;
   	justify-content: center;
   	height: 100vh; 
 	
-	font-size: 20px;
 	color: #ffffff;
 }
 
@@ -167,15 +207,15 @@ hr {
 }
 
 #developerInfo {
+	font-size: 20px;
+
 	display: none;
 	align-items: center;
   	justify-content: center;
   	height: 100vh; 
 	
-	font-size: 20px;
 	color: #ffffff;
 }
-
 /*--------------------SEC PAGE--------------------*/
 
 @keyframes slideInLeft {
@@ -187,17 +227,30 @@ hr {
 	}
   }
 @keyframes slideInRight {
-	100% {
-	  transform: translateX(-100%);
-	}
 	0% {
+	  transform: translateX(100%);
+	}
+	100% {
 	  transform: translateX(0);
+	}
+  }
+@keyframes slideUp {
+	0% {
+	  transform: translateY(100%);
+	}
+	100% {
+	  transform: translateY(0);
 	}
   }
 @keyframes fadeIn {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
   }
+@keyframes bounce { 
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+	40% {transform: translateY(-30px);} 
+	60% {transform: translateY(-15px);} 
+ }
 /*--------------------FONT--------------------*/
 @font-face {
   font-family: 'AbadiExtraLight';
