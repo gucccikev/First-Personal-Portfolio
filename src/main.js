@@ -26,4 +26,30 @@ document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
 });
 /*-----------------------------SCROLL BACK ON TOP-------------------------------*/
 
+/*-----------------------------CLICK ON TEXT-------------------------------*/
+
+document.getElementById("designer").onclick = function() {  
+
+};  
+/*-----------------------------------------------------------------------*/
+// document.getElementById("designerSPAN").onclick = function() {  
+//   moveTextUp();
+// };  
+
+// function moveTextUp() {
+//   console.log("testttt");
+// }
+/*-----------------------------------------------------------------------*/
+// const designerSPAN = document.getElementById("designerSPAN");
+
+// designerSPAN.addEventListener("click", function() {
+//   moveTextUp();
+// });
+
+// function moveTextUp() {
+//   console.log("testttt");
+// }
+/*-----------------------------CLICK ON TEXT-------------------------------*/
+
+
 /*-----------------------------HOVER ON TEXT-------------------------------*/
