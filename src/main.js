@@ -28,9 +28,9 @@ document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
 
 /*-----------------------------CLICK ON TEXT-------------------------------*/
 
-document.getElementById("designer").onclick = function() {  
+// document.getElementById("designerSPAN").onclick = function() {  
 
-};  
+// };  
 /*-----------------------------------------------------------------------*/
 // document.getElementById("designerSPAN").onclick = function() {  
 //   moveTextUp();
@@ -50,6 +50,36 @@ document.getElementById("designer").onclick = function() {
 //   console.log("testttt");
 // }
 /*-----------------------------CLICK ON TEXT-------------------------------*/
+function displayDesignerInfo() {
+  
+}
 
+/*-----------------------------HOVER BOOKS-------------------------------*/
+function booksOpen(image) {
+  image.src = "../assets/kev/books/Books-Open-Cartoon.png";
+}
 
-/*-----------------------------HOVER ON TEXT-------------------------------*/
+function booksClosed(image) {
+  image.src = "../assets/kev/books/Books-Closed-Cartoon.png";
+}
+/*-----------------------------HOVER BOOKS-------------------------------*/
+
+/*-----------------------------HOVER WORK-------------------------------*/
+function workNoError(image) {
+  image.src = "../assets/kev/work/Work-NoError-Cartoon.png";
+}
+
+function workError(image) {
+  image.src = "../assets/kev/work/Work-Error-Cartoon.png";
+}
+/*-----------------------------HOVER WORK-------------------------------*/
+
+/*-----------------------------HOVER WORKOUT-------------------------------*/
+function inhale(image) {
+  image.src = "../assets/kev/workout/Workout-Exhale-Cartoon.png";
+}
+
+function exhale(image) {
+  image.src = "../assets/kev/workout/Workout-Inhale-Cartoon.png";
+}
+/*-----------------------------HOVER WORKOUT-------------------------------*/

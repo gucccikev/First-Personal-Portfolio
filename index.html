@@ -3,9 +3,11 @@
 	<head>
 		<title>Gucccikev</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="./css/main.css">
-	</head>
 
+		<script type="text/javascript" src="./src/main.js"></script>
+	</head>
 	<body>
 	<!-- -----------------------------HEADER------------------------------- -->
 		<header>
@@ -19,6 +21,14 @@
 			</div>
 		</header>
 	<!-- -----------------------------HEADER------------------------------- -->
+
+	<!-- -----------------------------OPENING PAGE------------------------------- -->
+		<!-- <div class="openingPage">
+			<div class="openingPageBlock">
+				<p id="typeWord"><span id="typeWordAnimation">"Never stray from the way."</span></p>
+			</div>
+		</div> -->
+	<!-- -----------------------------OPENING PAGE------------------------------- -->
 
 	<!-- -----------------------------FIRST PAGE------------------------------- -->
 		<div class="pages firstPage">
@@ -62,27 +72,32 @@
 				</div>
 				<p id="scrollDown">SCROLL</p>
 			</div>
-			<!-- <div class="firstPageFourthBlock">
-				<div class="firstKev">
-					<img src="../assets/kev/red_jacket_cartoon.png" alt="firstKev" width="50%" height="50%">
+			<div class="firstPageFourthBlock">
+				<div class="titleKev">
+					<img src="../assets/kev/red_jacket_cartoon_2.png" alt="titleKev" width="35%" height="35%">
+				</div>	
+			</div>
+			<div class="firstPageFifthBlock">
+				<div class="quote">
+					<p id="typeWord"><span id="typeWordAnimation">"Bringing these <span style="color:#A91101">two soulmates</span> together."</span></p>
 				</div>
-			</div> -->
+			</div>
 		</div>
 	<!-- -----------------------------FIRST PAGE------------------------------- -->
 
 	<!-- -----------------------------SECOND PAGE------------------------------- -->
 		<div class="pages secondPage">
 			<div class="secondPageFirstBlock">
-				<!-- <p id="test1">BUILD MY MIND</p> -->
-				<div class="kevBooksClosed">
-					<img src="../assets/kev/Books-Closed-Cartoon.png" alt="kevBooksClosed" width="50%" height="50%">
-				</div>
+				<p id="test1">MIND</p>
+				<img id="book" src="../assets/kev/books/Books-Closed-Cartoon.png" onmouseover="booksOpen(this);" onmouseout="booksClosed(this);" width="50%" height="50%">
 			</div>
 			<div class="secondPageSecondBlock">
 				<p id="test2">TEST2</p>
+				<img id="work" src="../assets/kev/work/Work-NoError-Cartoon.png" onmouseover="workNoError(this);" onmouseout="workError(this);" width="50%" height="50%">
 			</div>
 			<div class="secondPageThirdBlock">
 				<p id="test3">TEST3</p>
+				<img id="workout" src="../assets/kev/workout/Workout-Exhale-Cartoon.png" onmouseover="inhale(this);" onmouseout="exhale(this);" width="50%" height="50%">
 			</div>	
 		</div>
 	<!-- -----------------------------SECOND PAGE------------------------------- -->
@@ -90,7 +105,7 @@
 	<!-- -----------------------------THIRD PAGE------------------------------- -->
 		<div class="pages thirdPage">
 			<div class="thirdPageFirstBlock">
-				<p id="designer"><span id="designerSPAN">DESIGNER</span></p>
+				<p id="designer"><span id="designerSPAN" onclick="displayDesignerInfo()">DESIGNER</span></p>
 				<p id="developerInfo">Developing is fun</p>
 			</div>
 			<div class="thirdPageSecondBlock">
