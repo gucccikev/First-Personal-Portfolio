@@ -26,33 +26,62 @@ document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
 });
 /*-----------------------------SCROLL BACK ON TOP-------------------------------*/
 
-/*-----------------------------CLICK ON TEXT-------------------------------*/
+/*-----------------------------SMOOTH SCROLL-------------------------------*/
+// const navLinks = document.querySelectorAll('nav ul li a');
+// const sections = document.querySelectorAll('section');
+// const navHeight = document.querySelector('nav').offsetHeight;
 
-// document.getElementById("designerSPAN").onclick = function() {  
-
-// };  
-/*-----------------------------------------------------------------------*/
-// document.getElementById("designerSPAN").onclick = function() {  
-//   moveTextUp();
-// };  
-
-// function moveTextUp() {
-//   console.log("testttt");
-// }
-/*-----------------------------------------------------------------------*/
-// const designerSPAN = document.getElementById("designerSPAN");
-
-// designerSPAN.addEventListener("click", function() {
-//   moveTextUp();
+// navLinks.forEach(link => {
+//   link.addEventListener('click', e => {
+//     e.preventDefault();
+//     const targetId = link.getAttribute('href');
+//     const targetPosition = document.querySelector(targetId).offsetTop - navHeight;
+//     window.scrollTo({
+//       top: targetPosition,
+//       behavior: 'smooth'
+//     });
+//   });
 // });
 
-// function moveTextUp() {
-//   console.log("testttt");
-// }
-/*-----------------------------CLICK ON TEXT-------------------------------*/
+// window.addEventListener('scroll', () => {
+//   const currentPosition = window.pageYOffset;
+//   sections.forEach(section => {
+//     const sectionTop = section.offsetTop - navHeight;
+//     const sectionHeight = section.clientHeight;
+//     if (currentPosition >= sectionTop && currentPosition < sectionTop + sectionHeight) {
+//       navLinks.forEach(link => {
+//         link.classList.remove('active');
+//         if (link.getAttribute('href') === `#${section.id}`) {
+//           link.classList.add('active');
+//         }
+//       });
+//     }
+//   });
+// });
+/*-----------------------------SMOOTH SCROLL-------------------------------*/
+
+/*-----------------------------CLICK ON DESIGNER-------------------------------*/
 function displayDesignerInfo() {
-  
+    var designerSPAN = document.getElementById("designerSPAN");
+		var designerInfo = document.getElementById("designerInfo");
+
+    designerSPAN.classList.toggle("clicked");
+		designerSPAN.style.marginTop = "-600px";
+		designerInfo.style.display = "block";
+
 }
+/*-----------------------------CLICK ON DESIGNER-------------------------------*/
+
+/*-----------------------------CLICK ON DEVELOPER-------------------------------*/
+function displayDeveloperInfo() {
+    var developerSPAN = document.getElementById("developerSPAN");
+		var developerInfo = document.getElementById("developerInfo");
+
+    developerSPAN.classList.toggle("clicked");
+		developerSPAN.style.marginBottom = "-600px";
+		developerInfo.style.display = "block";
+}
+/*-----------------------------CLICK ON DEVELOPER-------------------------------*/
 
 /*-----------------------------HOVER BOOKS-------------------------------*/
 function booksOpen(image) {

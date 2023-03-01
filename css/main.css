@@ -11,6 +11,25 @@ body, html {
 	min-height: 100vh;
 }
 
+/* nav {
+	margin: 0;
+  	padding: 0;
+	position: fixed;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+} */
+
 p {
 	margin: 0%;
 	padding: 0%;
@@ -22,9 +41,10 @@ hr {
 
 /*--------------------HR--------------------*/
 hr {
-  height: 1px;
-  border: none;
-  background-color: #ffffff;
+	height: 1px;
+	border: none;
+
+	background-color: #ffffff;
 }
 
 .header {
@@ -37,30 +57,36 @@ hr {
 
 .gucccikev {
 	text-decoration: none;
+
 	font-family: AbadiExtraLight;
 	font-size: 25px;
 
 	margin-left: 50px;
+
 	color: #ffffff;
 }
 
 .email {
 	text-decoration: none;
+
 	font-family: AbadiExtraLight;
 	font-size: 25px;
 
 	float: right;
 	margin-right: 50px;
 	margin-left: 10px;
+
 	color: #ffffff;
 }
 
 .linkedin {
 	text-decoration: none;
+
 	font-family: AbadiExtraLight;
 	font-size: 25px;
 
 	float: right;
+	
 	color: #ffffff;
 }
 /*--------------------HR--------------------*/
@@ -81,18 +107,19 @@ hr {
 /*--------------------FIRST PAGE--------------------*/
 .firstPage {
 	background-color: #000000;
+
+	scroll-snap-align: start;
 }
 
-.firstPageFirstBlock {
+.titleBlock {
+	overflow: hidden;
 	position: absolute;
 	top: 10%;
 	left: 50px;
 
 	width: fit-content;
 	height: fit-content;
-}
 
-#design {
 	font-family: AbadiExtraLight;
 	font-size: 100px;
 
@@ -102,7 +129,7 @@ hr {
 	animation-name: slideInLeft;
 }
 
-.firstPageSecondBlock {
+.nameBlock {
 	position: absolute;
 	top: 10%;
 	right: 50px;
@@ -111,14 +138,9 @@ hr {
 	height: fit-content;
 
 	text-align: right;
-}
 
-#kevser {
 	font-family: AbadiExtraLight;
 	font-size: 100px;
-
-	width: fit-content;
-	height: fit-content;
 
 	color: #ffffff;
 
@@ -128,7 +150,7 @@ hr {
 	animation-name: slideInRight;
 }
 
-.firstPageThirdBlock {
+.scrollBlock {
 	position: absolute;
 	bottom: 2%;
 	left: 50%;
@@ -137,23 +159,30 @@ hr {
 	animation: fadeIn 5s;
 }
 
-.firstPageFourthBlock {
+.arrowDown {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 4s;
+	animation-name: bounce;
+}
+
+#scrollDown {
+	font-family: AbadiExtraLight;
+	font-size: 15px;
+
+	color: #ffffff;
+}
+
+.titleKevBlock {
 	position: absolute;
 	top: 10%;
 	left: 40%;
 
-	
 	animation-delay: 3s;
 	animation: fadeIn 5s;
 }
 
-.titleKev {
-	border: #ffffff;
-
-	
-}
-
-.firstPageFifthBlock {
+.quoteBlock {
 	font-family: AbadiExtraLight;
 	font-size: 50px;
 
@@ -176,99 +205,17 @@ hr {
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: .15em; /* Adjust as needed */
-	animation-delay: 5s;
-	animation: 
-	  typing 2s steps(40, end),
-	  blink-caret 1s step-end infinite;
-}
-
-.arrowDown {
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-delay: 4s;
-	animation-name: bounce;
-}
-
-#scrollDown {
-	font-family: AbadiExtraLight;
-	font-size: 15px;
-
-	color: #ffffff;
+	animation: typing 2s steps(40, end), blink-caret 1s step-end infinite;
 }
 /*--------------------FIRST PAGE--------------------*/
 
 /*--------------------SECOND PAGE-------------------*/
 .secondPage {
-	background-color: #A91101;
-	display: flex;
-}
-
-.secondPageFirstBlock {
-	font-family: AbadiExtraLight;
-	font-size: 100px;
-
-	width: 33%;
-
-	text-align: center;
-}
-
-.secondPageSecondBlock {
-	font-family: AbadiExtraLight;
-	font-size: 100px;
-
-	width: 33%;
-
-	text-align: center;
-}
-
-.secondPageThirdBlock {
-	font-family: AbadiExtraLight;
-	font-size: 100px;
-
-	width: 33%;
-
-	text-align: center;
-}
-
-#work {
-
-}
-
-#test1 {
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	height: 100vh;
-
-	color: #ffffff;
-}
-
-#test2 {
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	height: 100vh;
-
-	color: #ffffff;
-}
-
-#test3 {
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	height: 100vh;
-
-	color: #ffffff;
-}
-/*--------------------SECOND PAGE-------------------*/
-
-/*--------------------THIRD PAGE--------------------*/
-.thirdPage {
 	background-color: #000000;
 	display: flex;
 }
 
-.thirdPageFirstBlock {
+.designerBlock {
 	font-family: AbadiExtraLight;
 	font-size: 100px;
 
@@ -277,7 +224,7 @@ hr {
 	text-align: center;
 }
 
-.thirdPageSecondBlock {
+.developerBlock {
 	font-family: AbadiExtraLight;
 	font-size: 100px;
 
@@ -295,14 +242,17 @@ hr {
 	color: #ffffff;
 }
 
+#designerSPAN.clicked {
+	transition: margin-top 0.5s ease-in-out;
+}
+
 #designerInfo {
 	font-size: 20px;
 
 	display: none;
-  	align-items: center;
+	align-items: center;
   	justify-content: center;
-  	height: 100vh; 
-	
+
 	color: #ffffff;
 }
 
@@ -315,14 +265,88 @@ hr {
 	color: #A91101;
 }
 
+#developerSPAN.clicked {
+	transition: margin-bottom 0.5s ease-in-out;
+}
+
 #developerInfo {
 	font-size: 20px;
 
 	display: none;
-	align-items: center;
-  	justify-content: center;
-  	height: 100vh; 
 	
+	color: #ffffff;
+}
+
+/*--------------------SECOND PAGE-------------------*/
+
+/*--------------------THIRD PAGE--------------------*/
+.thirdPage {
+	background-color: #000000;
+	display: flex;
+}
+
+.aboutTitles {
+	font-family: AbadiExtraLight;
+	font-size: 50px;
+
+	display: grid;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+	width: 33%;
+
+	text-align: center;
+
+	color: #ffffff;
+}
+
+.aboutMe {
+	font-family: AbadiExtraLight;
+	font-size: 80px;
+
+	position: absolute;
+
+	top: 10%;
+	left: 50px;
+	
+	text-align: center;
+
+	color: #A91101;
+
+	border-right: .025em solid #A91101;
+}
+
+.aboutImages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	height: 100vh;
+	width: 33%;
+
+	text-align: center;		
+}
+
+#mindImage {
+	
+
+}
+
+.aboutTexts {
+	font-family: AbadiExtraLight;
+	font-size: 50px;
+
+	display: grid;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+	width: 33%;
+
+	text-align: center;
+
 	color: #ffffff;
 }
 /*--------------------THIRD PAGE--------------------*/
