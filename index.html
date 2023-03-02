@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="./css/main.css">
-
+		<link rel="icon" type="image/x-icon" href="../assets/icon/paper_plane.svg">
 		<script type="text/javascript" src="./src/main.js"></script>
 	</head>
 	<body>
@@ -17,6 +17,8 @@
 				<a href="mailto:bjkevser@hotmail.com" class="email">email</a>
 				<!-- <a href="https://www.linkedin.com/in/gucccikev/" target="_blank" class="linkedin"><img src="../assets/icon/in.png" alt="in" width="20%" height="20%"></a> -->
 				<a href="https://www.linkedin.com/in/gucccikev/" target="_blank" class="linkedin">linkedIn</a>
+				<a href="https://github.com/gucccikev" target="_blank" class="github">github</a>
+				<a href="https://www.artstation.com/gucccikev" target="_blank" class="artstation">artstation</a>
 			<!-- <hr> -->
 			</div>
 		</header>
@@ -96,13 +98,44 @@
 	<section id="section-2">
 		<div class="pages secondPage">
 			<div class="designerBlock">
-				<p id="designer"><span id="designerSPAN" onclick="displayDesignerInfo()">DESIGNER</span></span>
-				<p id="designerInfo">3D modeling is fun</p>
+				<p id="designer"><span id="designerSPAN" onclick="displayDesignerInfo()">DESIGNER</span></p>
+				<div id="designerInfo">
+					<p>Design for me is valuing <span style="color:#A91101">attention to detail</span> and creating visually appealing content.</p>
+					<!-- <hr> -->
+					<br>
+					<div class="designerInfoSlideshow">
+						<div class="slides fade">
+							<div class="slideTitle">PHOTOSHOP</div>
+							<img id="imagePhotoshop" src="../assets/designer/designerInfo_Photoshop.png">
+							<div class="slideInfo">Editing Pictures</div>
+						</div>
+						<div class="slides fade">
+							<div class="slideTitle">BLENDER</div>
+							<img id="imageBlender" src="../assets/designer/designerInfo_Blender.png">
+							<div class="slideInfo">3D Modelling</div>
+						</div>
+						<div class="slides fade">
+							<div class="slideTitle">BLENDER & PHOTOSHOP</div>
+							<img id="imageBlenderAndPhotoshop" src="../assets/designer/designerInfo_Blender&Photoshop.png">
+							<div class="slideInfo">Both modelled and edited</div>
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">&#10092;</a>
+      					<a class="next" onclick="plusSlides(1)">&#10093;</a>
+					</div>
+					<br>
+					<div style="text-align:center">
+					<span class="line" onclick="currentSlide(1)"></span>
+					<span class="line" onclick="currentSlide(2)"></span>
+					<span class="line" onclick="currentSlide(3)"></span>
+					</div>
+				</div>
 			</div>
 			<div class="developerBlock">
-				<p id="developerInfo">Developing is fun</p>
 				<p id="developer"><span id="developerSPAN" onclick="displayDeveloperInfo()">DEVELOPER</span></p>
-			</div>	
+				<div id="developerInfo">
+					<p>Development for me is having the capability to <span style="color:#ffffff">bring into life</span> whatever you imagine.</p>
+				</div>
+			</div>		
 		</div>		
 	</section>
 	<!-- -----------------------------SECOND PAGE------------------------------- -->
@@ -121,8 +154,6 @@
 					<br>
 					<span style="color:#A91101">T</span>
 					<br>
-					<span style="color:#A91101"></span>
-					<br>
 					<span style="color:#A91101">M</span>
 					<br>
 					<span style="color:#A91101">E</span>
@@ -133,9 +164,9 @@
 				<p id="bodyTitle">BODY</p>					
 			</div>
 			<div class="aboutImages">
-				<img id="mindImage" src="../assets/kev/books/Books-Closed-Cartoon.png" onmouseover="booksOpen(this)" onmouseout="booksClosed(this)" width="40%" height="40%">
-				<img id="codeImage" src="../assets/kev/work/Work-NoError-Cartoon.png" onmouseover="workError(this)" onmouseout="workNoError(this)" width="40%" height="40%">
-				<img id="bodyImage" src="../assets/kev/workout/Workout-Exhale-Cartoon.png" onmouseover="exhale(this)" onmouseout="inhale(this)" width="40%" height="40%">
+				<img id="mindImage" src="../assets/kev/books/Books-Closed-Cartoon.png" onmouseover="booksOpen(this)" onmouseout="booksClosed(this)" width="35%" height="35%">
+				<img id="codeImage" src="../assets/kev/work/Work-NoError-Cartoon.png" onmouseover="workError(this)" onmouseout="workNoError(this)" width="35%" height="35%">
+				<img id="bodyImage" src="../assets/kev/workout/Workout-Exhale-Cartoon.png" onmouseover="exhale(this)" onmouseout="inhale(this)" width="35%" height="35%">
 			</div>
 			<div class="aboutTexts">
 				<p id="mindText">text1</p>

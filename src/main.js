@@ -62,24 +62,56 @@ document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
 
 /*-----------------------------CLICK ON DESIGNER-------------------------------*/
 function displayDesignerInfo() {
-    var designerSPAN = document.getElementById("designerSPAN");
-		var designerInfo = document.getElementById("designerInfo");
+  var designerSPAN = document.getElementById("designerSPAN");
+  var designerInfo = document.getElementById("designerInfo");
 
-    designerSPAN.classList.toggle("clicked");
-		designerSPAN.style.marginTop = "-600px";
-		designerInfo.style.display = "block";
+  var imagePhotoshop = document.getElementById("imagePhotoshop");
+  var imageBlender = document.getElementById("imageBlender");
+  var imageBlenderAndPhotoshop = document.getElementById("imageBlenderAndPhotoshop");
 
+  var designerSPANWidth = designerSPAN.offsetWidth;
+
+  designerSPAN.classList.toggle("clicked");
+
+  if (designerSPAN.classList.contains("clicked")) {
+    designerSPAN.style.marginTop = "-600px";
+    designerInfo.style.marginTop = "-650px";
+
+    designerInfo.style.width = designerSPANWidth + "px";
+    imagePhotoshop.style.width = designerSPANWidth + "px";
+    imageBlender.style.width = designerSPANWidth + "px";
+    imageBlenderAndPhotoshop.style.width = designerSPANWidth + "px";
+
+    designerInfo.style.display = "block";
+    designerSPAN.style.transition = "margin-top 0.25s ease-in-out";
+  } else {
+    designerSPAN.style.marginTop = "0px";
+    designerInfo.style.marginTop = "0px";
+    designerInfo.style.display = "none";
+  }
 }
 /*-----------------------------CLICK ON DESIGNER-------------------------------*/
 
 /*-----------------------------CLICK ON DEVELOPER-------------------------------*/
 function displayDeveloperInfo() {
-    var developerSPAN = document.getElementById("developerSPAN");
-		var developerInfo = document.getElementById("developerInfo");
+  var developerSPAN = document.getElementById("developerSPAN");
+  var developerInfo = document.getElementById("developerInfo");
 
-    developerSPAN.classList.toggle("clicked");
-		developerSPAN.style.marginBottom = "-600px";
-		developerInfo.style.display = "block";
+  var developerSPANWidth = developerSPAN.offsetWidth;
+
+  developerSPAN.classList.toggle("clicked");
+
+  if (developerSPAN.classList.contains("clicked")) {
+    developerSPAN.style.marginTop = "-600px";
+    developerInfo.style.marginTop = "-650px";
+    developerInfo.style.width = developerSPANWidth + "px";
+    developerInfo.style.display = "block";
+    developerSPAN.style.transition = "margin-top 0.5s ease-in-out";
+  } else {
+    developerSPAN.style.marginTop = "0px";
+    developerInfo.style.marginTop = "0px";
+    developerInfo.style.display = "none";
+  }
 }
 /*-----------------------------CLICK ON DEVELOPER-------------------------------*/
 
@@ -112,3 +144,36 @@ function exhale(image) {
   image.src = "../assets/kev/workout/Workout-Inhale-Cartoon.png";
 }
 /*-----------------------------HOVER WORKOUT-------------------------------*/
+
+/*-----------------------------DESIGNER SLIDESHOW-------------------------------*/
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var line = document.getElementsByClassName("line");
+  if(n > slides.length) {
+    slideIndex = 1
+  }
+  if(n < 1) {
+    slideIndex = slides.length
+  }
+  for(i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for(i = 0; i < line.length; i++) {
+    line[i].className = line[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  line[slideIndex - 1].className += " active";
+}
+
+/*-----------------------------DESIGNER SLIDESHOW-------------------------------*/
