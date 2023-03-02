@@ -1,29 +1,29 @@
 /*-----------------------------SCROLL BACK ON TOP-------------------------------*/
-document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
-  e.preventDefault();
-  var target = document.querySelector('#top');
-  var startPosition = window.pageYOffset;
-  var distance = target.getBoundingClientRect().top;
-  var duration = 800;
-  var startTime = null;
+// document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
+//   e.preventDefault();
+//   var target = document.querySelector('#top');
+//   var startPosition = window.pageYOffset;
+//   var distance = target.getBoundingClientRect().top;
+//   var duration = 800;
+//   var startTime = null;
 
-  function animate(currentTime) {
-    if (startTime === null) startTime = currentTime;
-    var timeElapsed = currentTime - startTime;
-    var run = ease(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if (timeElapsed < duration) requestAnimationFrame(animate);
-  }
+//   function animate(currentTime) {
+//     if (startTime === null) startTime = currentTime;
+//     var timeElapsed = currentTime - startTime;
+//     var run = ease(timeElapsed, startPosition, distance, duration);
+//     window.scrollTo(0, run);
+//     if (timeElapsed < duration) requestAnimationFrame(animate);
+//   }
 
-  function ease(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t + b;
-    t--;
-    return -c / 2 * (t * (t - 2) - 1) + b;
-  }
+//   function ease(t, b, c, d) {
+//     t /= d / 2;
+//     if (t < 1) return c / 2 * t * t + b;
+//     t--;
+//     return -c / 2 * (t * (t - 2) - 1) + b;
+//   }
 
-  requestAnimationFrame(animate);
-});
+//   requestAnimationFrame(animate);
+// });
 /*-----------------------------SCROLL BACK ON TOP-------------------------------*/
 
 /*-----------------------------SMOOTH SCROLL-------------------------------*/
@@ -59,6 +59,39 @@ document.querySelector('a[href="#top"]').addEventListener('click', function(e) {
 //   });
 // });
 /*-----------------------------SMOOTH SCROLL-------------------------------*/
+
+/*-----------------------------TEXT FLOAT IN ANIMATION-------------------------------*/
+function slideInFromLeft() {
+  var titleBlock = document.getElementById("titleBlock");
+  titleBlock.style.opacity = '0';
+  titleBlock.style.transform = "translateX(-100%)";
+  titleBlock.style.transition = "transform 2s ease";
+  // opacity 2s ease
+
+  setTimeout(() => {
+  titleBlock.style.opacity = '1';
+  titleBlock.style.transform = 'translateX(0)';
+  }, 1700);
+}
+
+function slideInFromRight()  {
+  var nameBlock = document.getElementById("nameBlock");
+  nameBlock.style.opacity = '0';
+  nameBlock.style.transform = 'translateX(100%)';
+  nameBlock.style.transition = "transform 2s ease";
+
+  setTimeout(() => {
+    nameBlock.style.opacity = '1';
+    nameBlock.style.transform = 'translateX(0)';
+  }, 4000);
+}
+
+function textFloatAnimation() {
+  slideInFromLeft();
+  slideInFromRight();
+}
+
+/*-----------------------------TEXT FLOAT IN ANIMATION-------------------------------*/
 
 /*-----------------------------CLICK ON DESIGNER-------------------------------*/
 function displayDesignerInfo() {

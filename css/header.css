@@ -1,0 +1,84 @@
+hr {
+	height: 1px;
+	border: none;
+
+	background-color: #ffffff;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+
+	animation: fadeIn 12s;
+	background-color: #000000;
+}
+
+.gucccikev {
+	text-decoration: none;
+
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+
+	margin-left: 50px;
+
+	color: #ffffff;
+}
+
+.hide {
+	display: none;
+}
+
+.email {
+	text-decoration: none;
+
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+
+	float: right;
+	margin-right: 50px;
+	margin-left: 10px;
+
+	color: #ffffff;
+}
+
+.linkedin {
+	text-decoration: none;
+
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+
+	float: right;
+	margin-left: 10px;
+	
+	color: #ffffff;
+}
+
+.linkedin:hover + .hide {
+	display: block;
+	color: red;
+  }
+
+.github {
+	text-decoration: none;
+
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+
+	float: right;
+	margin-left: 10px;
+	
+	color: #ffffff;
+}
+
+.artstation {
+	text-decoration: none;
+
+	font-family: AbadiExtraLight;
+	font-size: 25px;
+
+	float: right;
+	margin-left: 10px;
+	
+	color: #ffffff;
+}

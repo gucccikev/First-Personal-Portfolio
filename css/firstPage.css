@@ -1,0 +1,107 @@
+.firstPage {
+	background-color: #000000;
+
+	scroll-snap-align: start;
+}
+
+#titleBlock {
+	position: absolute;
+	top: 10%;
+	left: 50px;
+
+	width: fit-content;
+	height: fit-content;
+
+	font-family: AbadiExtraLight;
+	font-size: 100px;
+
+	/* animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-delay: 2s;
+	animation-name: slideInLeft; */
+}
+
+#nameBlock {
+	position: absolute;
+	top: 10%;
+	right: 50px;
+
+	width: fit-content;
+	height: fit-content;
+
+	text-align: right;
+
+	font-family: AbadiExtraLight;
+	font-size: 100px;
+
+	color: #ffffff;
+
+	/* animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-delay: 4s;
+	animation-name: slideInRight; */
+}
+
+.scrollBlock {
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+
+	animation: fadeIn 12s;
+}
+
+.arrowDown {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 8s;
+	animation-name: bounce;
+}
+
+#scrollDown {
+	font-family: AbadiExtraLight;
+	font-size: 15px;
+
+	color: #ffffff;
+}
+
+.titleKevBlock {
+	position: absolute;
+
+	top: 16%;
+	left: 42.7%;
+
+	animation: fadeIn 9s;
+}
+
+.quoteBlock {
+	font-family: AbadiExtraLight;
+	font-size: 50px;
+
+	text-align: center;
+
+	color: #ffffff;
+}
+
+#typeWord {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+
+	width: fit-content;
+	margin: auto;
+}
+
+#typeWord::after {
+	content: '|';
+	color: #a91101;
+	margin-left: 3px;
+	animation: blink 1.5s infinite;
+}
+
+#typeWordAnimation {
+	overflow: hidden; 	
+	white-space: nowrap; 
+	letter-spacing: .15em; 
+	animation: typing 3s steps(40, end);
+}
