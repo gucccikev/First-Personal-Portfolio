@@ -14,11 +14,6 @@
 
 	font-family: AbadiExtraLight;
 	font-size: 100px;
-
-	/* animation-duration: 2s;
-	animation-timing-function: ease;
-	animation-delay: 2s;
-	animation-name: slideInLeft; */
 }
 
 #nameBlock {
@@ -35,11 +30,6 @@
 	font-size: 100px;
 
 	color: #ffffff;
-
-	/* animation-duration: 2s;
-	animation-timing-function: ease;
-	animation-delay: 4s;
-	animation-name: slideInRight; */
 }
 
 .scrollBlock {
