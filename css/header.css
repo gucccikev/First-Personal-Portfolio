@@ -25,10 +25,6 @@ hr {
 	color: #ffffff;
 }
 
-.hide {
-	display: none;
-}
-
 .email {
 	text-decoration: none;
 
@@ -53,11 +49,6 @@ hr {
 	
 	color: #ffffff;
 }
-
-.linkedin:hover + .hide {
-	display: block;
-	color: red;
-  }
 
 .github {
 	text-decoration: none;

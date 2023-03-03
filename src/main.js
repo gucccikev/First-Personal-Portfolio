@@ -89,6 +89,7 @@ function slideInFromRight()  {
 function textFloatAnimation() {
   slideInFromLeft();
   slideInFromRight();
+  currentSlide(1);
 }
 
 /*-----------------------------TEXT FLOAT IN ANIMATION-------------------------------*/
@@ -101,6 +102,7 @@ function displayDesignerInfo() {
   var imagePhotoshop = document.getElementById("imagePhotoshop");
   var imageBlender = document.getElementById("imageBlender");
   var imageBlenderAndPhotoshop = document.getElementById("imageBlenderAndPhotoshop");
+
 
   var designerSPANWidth = designerSPAN.offsetWidth;
 
@@ -130,6 +132,8 @@ function displayDeveloperInfo() {
   var developerSPAN = document.getElementById("developerSPAN");
   var developerInfo = document.getElementById("developerInfo");
 
+  var skillContainerForWidth = document.getElementById("skillContainerForWidth");
+
   var developerSPANWidth = developerSPAN.offsetWidth;
 
   developerSPAN.classList.toggle("clicked");
@@ -137,13 +141,19 @@ function displayDeveloperInfo() {
   if (developerSPAN.classList.contains("clicked")) {
     developerSPAN.style.marginTop = "-600px";
     developerInfo.style.marginTop = "-650px";
+
     developerInfo.style.width = developerSPANWidth + "px";
+    skillContainerForWidth.style.width = developerSPANWidth + "px";
+    
     developerInfo.style.display = "block";
+    skillContainerForWidth.style.display = "block";
+    
     developerSPAN.style.transition = "margin-top 0.5s ease-in-out";
   } else {
     developerSPAN.style.marginTop = "0px";
     developerInfo.style.marginTop = "0px";
     developerInfo.style.display = "none";
+    skillContainerForWidth.style.display = "none";
   }
 }
 /*-----------------------------CLICK ON DEVELOPER-------------------------------*/
@@ -210,3 +220,8 @@ function showSlides(n) {
 }
 
 /*-----------------------------DESIGNER SLIDESHOW-------------------------------*/
+
+
+
+
+
