@@ -1,35 +1,17 @@
 body, html {
 	height: 100%;
 	margin: 0;
-	/* cursor: url("../assets/icon/paper_plane.svg"), auto; */
+	cursor: url("../assets/icon/paper_plane_red_thick.svg"), auto;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
+
 
 .pages {
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
 }
-
-/* nav {
-	margin: 0;
-  	padding: 0;
-	position: fixed;
-}
-
-nav ul {
-	list-style: none;
-}
-
-nav a {
-	text-decoration: none;
-}
-
-section {
-	height: 100vh;
-	display: flex;
-} */
 
 p {
 	margin: 0%;

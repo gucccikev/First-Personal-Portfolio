@@ -25,6 +25,22 @@ hr {
 	color: #ffffff;
 }
 
+.gucccikev:hover {
+	color: #a91101;
+}
+.artstation:hover {
+	color: #a91101;
+}
+.github:hover {
+	color: #a91101;
+}
+.linkedin:hover {
+	color: #a91101;
+}
+.email:hover {
+	color: #a91101;
+}
+
 .email {
 	text-decoration: none;
 
