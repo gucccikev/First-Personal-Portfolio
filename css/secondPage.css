@@ -52,6 +52,17 @@
 	color: #ffffff;
 }
 
+#designerArrow {
+	position: absolute;
+	bottom: 35%;
+	left: 22.5%;
+
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-name: bounce;
+}
+
 #developer {
 	cursor: pointer;
 
@@ -74,6 +85,16 @@
 	color: #A91101;
 }
 
+#developerArrow {
+	position: absolute;
+	bottom: 35%;
+	right: 22.5%;
+
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	animation-name: bounce;
+}
 /*--------------------DESIGNER SLIDESHOW-------------------*/
 .designerInfoSlideshow {
 	position: relative;

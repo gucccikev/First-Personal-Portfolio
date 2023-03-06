@@ -1,7 +1,5 @@
 .firstPage {
 	background-color: #000000;
-
-	scroll-snap-align: start;
 }
 
 #titleBlock {
