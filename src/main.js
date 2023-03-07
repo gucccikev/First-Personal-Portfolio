@@ -135,9 +135,9 @@ function displayAboutMeInfo() {
   aboutImages.style.width = aboutMeSPANWidth + "px";
   aboutTexts.style.width = aboutMeSPANWidth + "px";
 
-  mindText.style.width = aboutMeSPANWidth + "px";
-  codeText.style.width = aboutMeSPANWidth + "px";
-  bodyText.style.width = aboutMeSPANWidth + "px";
+  // mindText.style.width = aboutMeSPANWidth + "px";
+  // codeText.style.width = aboutMeSPANWidth + "px";
+  // bodyText.style.width = aboutMeSPANWidth + "px";
 }
 
 /*-----------------------------CLICK ON DESIGNER-------------------------------*/
@@ -219,6 +219,11 @@ function mindTextHideAtStart() {
 
   mindText.style.visibility = 'hidden';
   mindText.style.opacity = '0';
+
+  const mindQuote = document.getElementById('mindQuote');
+
+  mindQuote.style.visibility = 'hidden';
+  mindQuote.style.opacity = '0';
 }
 
 function booksOpen(image) {
@@ -226,6 +231,11 @@ function booksOpen(image) {
   const mindText = document.getElementById('mindText');
   mindText.style.visibility = 'visible';
   mindText.style.opacity = '1';
+
+  const mindQuote = document.getElementById('mindQuote');
+
+  mindQuote.style.visibility = 'visible';
+  mindQuote.style.opacity = '1';
 }
 
 function booksClosed(image) {
@@ -233,6 +243,11 @@ function booksClosed(image) {
   const mindText = document.getElementById('mindText');
   mindText.style.visibility = 'hidden';
   mindText.style.opacity = '0';
+
+  const mindQuote = document.getElementById('mindQuote');
+
+  mindQuote.style.visibility = 'hidden';
+  mindQuote.style.opacity = '0';
 }
 /*-----------------------------HOVER BOOKS-------------------------------*/
 
@@ -242,6 +257,11 @@ function codeTextHideAtStart() {
 
   codeText.style.visibility = 'hidden';
   codeText.style.opacity = '0';
+
+  const codeQuote = document.getElementById('codeQuote');
+
+  codeQuote.style.visibility = 'hidden';
+  codeQuote.style.opacity = '0';
 }
 
 function workError(image) {
@@ -249,6 +269,11 @@ function workError(image) {
   const codeText = document.getElementById('codeText');
   codeText.style.visibility = 'visible';
   codeText.style.opacity = '1';
+
+  const codeQuote = document.getElementById('codeQuote');
+
+  codeQuote.style.visibility = 'visible';
+  codeQuote.style.opacity = '1';
 }
 
 function workNoError(image) {
@@ -256,6 +281,11 @@ function workNoError(image) {
   const codeText = document.getElementById('codeText');
   codeText.style.visibility = 'hidden';
   codeText.style.opacity = '0';
+
+  const codeQuote = document.getElementById('codeQuote');
+
+  codeQuote.style.visibility = 'hidden';
+  codeQuote.style.opacity = '0';
 }
 /*-----------------------------HOVER WORK-------------------------------*/
 
@@ -265,6 +295,11 @@ function bodyTextHideAtStart() {
 
   bodyText.style.visibility = 'hidden';
   bodyText.style.opacity = '0';
+
+  const bodyQuote = document.getElementById('bodyQuote');
+
+  bodyQuote.style.visibility = 'hidden';
+  bodyQuote.style.opacity = '0';
 }
 
 function exhale(image) {
@@ -272,6 +307,11 @@ function exhale(image) {
   const bodyText = document.getElementById('bodyText');
   bodyText.style.visibility = 'visible';
   bodyText.style.opacity = '1';
+
+  const bodyQuote = document.getElementById('bodyQuote');
+
+  bodyQuote.style.visibility = 'visible';
+  bodyQuote.style.opacity = '1';
 }
 
 function inhale(image) {
@@ -279,6 +319,11 @@ function inhale(image) {
   const bodyText = document.getElementById('bodyText');
   bodyText.style.visibility = 'hidden';
   bodyText.style.opacity = '0';
+
+  const bodyQuote = document.getElementById('bodyQuote');
+
+  bodyQuote.style.visibility = 'hidden';
+  bodyQuote.style.opacity = '0';
 }
 /*-----------------------------HOVER WORKOUT-------------------------------*/
 

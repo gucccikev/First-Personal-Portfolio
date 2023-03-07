@@ -11,7 +11,7 @@
 	font-size: 80px;
 	
 	left: 50%;
-  	top: 15%;
+  	top: 20%;
  	-webkit-transform: translate(-50%, -50%);
   	transform: translate(-50%, -50%);
 	
@@ -86,10 +86,25 @@
 	background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#A91101 0);
 }
 
+#mindQuote {
+	font-family: AbadiExtraLight;
+	font-size: 27px;
+
+	position: absolute;
+	
+	left: 50%;
+  	top: 75%;
+ 	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+
+	text-align: justify;
+
+	color: #A91101;
+}
 
 #mindText {
 	font-family: AbadiExtraLight;
-	font-size: 30px;
+	font-size: 22px;
 
 	position: absolute;
 	
@@ -101,11 +116,27 @@
 	text-align: justify;
 
 	color: #ffffff;
+}
+
+#codeQuote {
+	font-family: AbadiExtraLight;
+	font-size: 27px;
+
+	position: absolute;
+	
+	left: 50%;
+  	top: 75%;
+ 	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+
+	text-align: justify;
+
+	color: #A91101;
 }
 
 #codeText {
 	font-family: AbadiExtraLight;
-	font-size: 30px;
+	font-size: 22px;
 
 	position: absolute;
 	
@@ -119,9 +150,25 @@
 	color: #ffffff;
 }
 
+#bodyQuote {
+	font-family: AbadiExtraLight;
+	font-size: 27px;
+
+	position: absolute;
+	
+	left: 50%;
+  	top: 75%;
+ 	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+
+	text-align: justify;
+
+	color: #A91101;
+}
+
 #bodyText {
 	font-family: AbadiExtraLight;
-	font-size: 30px;
+	font-size: 22px;
 
 	position: absolute;
 	
