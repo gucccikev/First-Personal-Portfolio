@@ -21,48 +21,9 @@ function scrollBackOnTop() {
 }
 /*-----------------------------SCROLL BACK ON TOP-------------------------------*/
 
-// // method to animate the first section to slide up and reveal the second section
-// function animateFirstSection() {
-//   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//   if (scrollTop > 0) {
-//     document.getElementById('section1').style.transform = 'translateY(-100%)';
-//   }
-// }
+/*-----------------------------SCROLL SNAPPING-------------------------------*/
 
-// // method to animate the second section to slide left and reveal the third section
-// function animateSecondSection() {
-//   document.getElementById('section2').style.transform = 'translateX(-100%)';
-//   document.getElementById('section3').style.transform = 'translateX(-100%)';
-// }
-
-// // method to add event listeners to the sections
-// function addSectionEventListeners() {
-//   // add scroll event listener to the window to animate the first section
-//   window.addEventListener('scroll', animateFirstSection);
-  
-//   // add wheel event listener to the second section to animate the third section
-//   document.getElementById('section2').addEventListener('wheel', function(event) {
-//     if (event.deltaX > 0) {
-//       animateSecondSection();
-//     }
-//   });
-// }
-
-/*
-// method to initialize the website
-function initWebsite() {
-  // set height and overflow properties on html and body elements
-  document.documentElement.style.height = '100%';
-  document.body.style.height = '100%';
-  document.body.style.overflow = 'hidden';
-  
-  // add event listeners to the sections
-  addSectionEventListeners();
-}
-
-// call the initWebsite method when the window loads
-window.addEventListener('load', initWebsite);
-*/
+/*-----------------------------SCROLL SNAPPING-------------------------------*/
 
 /*-----------------------------DISABLE RIGHT CLICK-------------------------------*/
 // function disableClick(){
